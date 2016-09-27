@@ -14,6 +14,8 @@ Tablespace created.
 3. create a database user to perform all administrative tasks without using 
 SYS and SYSTEM accounts.
 
+4. Alter table 
+
 
 
 
