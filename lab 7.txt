@@ -1,0 +1,20 @@
+1. view existing storage structure information
+select tablespace_name, warning_value, critical_value from dba_tablespace_thresholds;
+
+select segment_name from dba_segments where TABLESPACE_NAME='EXAMPLE';
+
+select segment_name , bytes/1024 from dba_segments where TABLESPACE_NAME='EXAMPLE' and segment_type='INDEX' order by 2 desc;
+
+2. create a new database for INVENTORY application
+
+create tablespace inventory datafile '/u01/app/oracle/oradata/inventory.dbf' size 5m autoextend on;
+
+Tablespace created.
+
+3. create a database user to perform all administrative tasks without using 
+SYS and SYSTEM accounts.
+
+
+
+
+
